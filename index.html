@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Engine</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      margin-bottom: 20px;
+    }
+    
+    .search-form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .search-form input[type="text"] {
+      padding: 10px;
+      width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    .search-form button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: #4285F4;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .logo {
+      font-size: 48px;
+      font-weight: bold;
+      color: orange;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="logo">FireSearch</h1>
+  
+  <form class="search-form" action="https://www.flamesearch.org/search" method="GET">
+    <input type="text" name="q" placeholder="Search..." required>
+    <button type="submit">Search</button>
+  </form>
+</body>
+</html>
